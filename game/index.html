@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster's hunter journey</title>
+    <link href="all.css" rel="stylesheet" /> 
+    <script type="module" src="menu.js"></script>
+    <script type="module" src="main.js"> </script>
+    <script type="module" src="settings.js"> </script>
+    <script type="module" src="player.js"> </script>
+    <script type="module" src="game.js"> </script>
+    <script type="module" src="gameobject.js"> </script>
+    <script type="module" src="background.js"> </script>
+    <script type="module" src="block.js"> </script>
+    <script type="module" src="level_1.js"></script>
+    <script type="module" src="input.js"></script>
+    <script type="module" src="item.js"></script>
+    <script type="module" src="enemy.js"></script>
+    <script type="module" src="enemyStates.js"></script>
+    <script type="module" src="observer.js"></script>
+    <script type="module" src="chest.js"></script>
+    <script type="module" src="boss.js"></script>
+    <script type="module" src="bossStates.js"></script>
+</head>
+<body>
+    <canvas id="canvas" width="1000" height="530" style="display: none;"></canvas>
+    <div id="container">
+        <div id="start-screen" class="screen" style="display: block;">
+            <button id="start-button" class="main-button">Start Game</button>
+            <button id="settings-button" class="main-button">Settings</button>
+            <button id="help-button" class="main-button">Help</button>
+            <button id="score-button" class="main-button">Score</button>
+        </div>
+    </div>
+    <div id="settings" style="display: none;">
+        <label id="label_1">
+            <label for="music-volume">Music volume:</label>
+            <input type="range" id="music-volume" min="0" max="100" value="30">
+        </label>
+        <label id="label_2">
+            <label for="sound-volume">Sound effects:</label>
+            <input type="range" id="sound-volume" min="0" max="100" value="30">
+        </label>
+        <img id="sound-on-1" class="sound-icon" src="/backgrounds/sound-on.png" />
+        <img id="sound-on-2" class="sound-icon" src="/backgrounds/sound-on1.png" />
+        <img id="sound-off-1" class="sound-icon" src="/backgrounds/sound-off.png" style="display: none;"/>
+        <img id="sound-off-2" class="sound-icon" src="/backgrounds/sound-off1.png" style="display: none;"/>
+        <button id="back-button_1">Back</button>
+    </div>
+    <div id="help" style="display: none;">
+        <button id="back-button">Back</button>
+    </div>
+    <div id="score" style="display: none;">
+        <table id="score-table" >
+            <tr>
+              <th>Name</th>
+              <th>Number of Coins</th>
+            </tr>
+        </table>
+        <button id="back-button_2">Back</button>
+    </div>
+    <div id="game-over-screen" style="display: none;">
+        <button id="game-over-button2">Back to Main Menu</button>
+        <button id="game-over-button1">Restart</button>
+    </div>
+    <div id="game-win-screen" style="display: none;">
+        <button id="game-over-button3">Back to Main Menu</button>
+    </div>
+    <img id="level-1-background" width="1000" height="530" src="/backgrounds/background/background_1.png" style="display: none;"/>
+    <img id="level-1-block-1" src="/backgrounds/Forest of Illusion Files/Layers/block-1.png" style="display: none;"/>
+    <img id="level-1-block-2" src="/backgrounds/Forest of Illusion Files/Layers/block-2.png" style="display: none;"/>
+    <img id="level-1-block-3" src="/backgrounds/Forest of Illusion Files/Layers/block-3.png" style="display: none;"/>
+    <img id="level-1-block-4" src="/backgrounds/Forest of Illusion Files/Layers/block-4.png" style="display: none;"/>
+    <img id="player" src="/character/main-character_up.png" style="display: none;"/>
+    <img id="coin" src="/item/coin.png" style="display: none;"/>
+    <img id="health" src="/item/health_plus.png" style="display: none;"/>
+    <img id="mushroom" src="/mobs/Monsters_Creatures_Fantasy/Mushroom/all-modified.png" style="display: none;"/>
+    <img id="goblin" src="/mobs/Monsters_Creatures_Fantasy/Goblin/all-modified (1).png" style="display: none;"/>
+    <img id="level-2-background" src="/backgrounds/background/background_2.png" style="display: none;"/>
+    <img id="level-3-background" src="/backgrounds/background/background_3.png" style="display: none;"/>
+    <img id="level-2-block-1" src="/backgrounds/Rocky Pass Files/PNG/tileset - Copy.png" style="display: none;"/>
+    <img id="level-2-block-2" src="/backgrounds/Rocky Pass Files/PNG/image.png" style="display: none;"/>
+    <img id="chest" src="/item/chest1.png" style="display: none;"/>
+    <img id="chest_opened" src="/item/chesets_open1.png" style="display: none;"/>
+    <img id="boss" src="/mobs/golem/Merged_document (11)-modified.png" style="display: none;"/>
+    <img id="sword_art" src="/item/sword.png" style="display: none;"/>
+
+</body>
+</html>
